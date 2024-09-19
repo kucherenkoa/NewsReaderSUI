@@ -12,26 +12,19 @@ struct NewsItemRow: View {
 
     var body: some View {
         HStack(alignment: .top) {
-            Color
-                .green
-                .opacity(0.1)
+            ThumbImage(url: newsItem.urlToImage ?? "")
                 .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 10) {
                 Text(newsItem.title ?? "")
-                    .font(.title)
                     .lineLimit(2)
+                    .textTitle()
                 Text(newsItem.description ?? "")
-                    .font(.title3)
                     .lineLimit(4)
+                    .subTitle()
                 Text(newsItem.dateString)
-                    .font(.subheadline)
                     .lineLimit(1)
+                    .smallTitle()
             }
-
         }
     }
 }
-
-//#Preview {
-//    NewsItemRow(newsItem: items)
-//}

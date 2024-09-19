@@ -11,8 +11,12 @@ struct MainScreen: View {
     @State var items = MockHelper.shared.mockItems
 
     var body: some View {
-        List(items) { item in
-            NewsItemRow(newsItem: item)
+        NavigationView {
+            List(items) { item in
+                NewsItemRow(newsItem: item)
+            }.refreshable {
+
+            }
         }
     }
 }
