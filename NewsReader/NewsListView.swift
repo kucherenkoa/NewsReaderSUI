@@ -11,7 +11,7 @@ struct NewsListView: View {
     @State var items = MockHelper.shared.mockItems
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(items) { item in
                 NavigationLink(destination: NewsItemView(item: item)) {
                     NewsItemRow(newsItem: item)
