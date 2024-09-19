@@ -6,58 +6,36 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct CachedImage: View {
-    @ObservedObject var model: ImageLoader
-
-    init(url: String) {
-        model = ImageLoader(url: url)
-    }
+    @State var url: String = ""
 
     var body: some View {
-        Image(uiImage: model.image)
+        KFImage(URL(string: url))
+            .placeholder({
+                Color.gray.opacity(0.1)
+            })
             .resizable()
-            .scaledToFill()
-            .onAppear {
-            model.load()
-        }
+            .aspectRatio(contentMode: .fill)
     }
 }
 
 struct ThumbImage: View {
-    @ObservedObject var model: ImageLoader
     @State var size: CGFloat = 100
-
-    init(url: String) {
-        model = ImageLoader(url: url)
-    }
+    @State var url: String = ""
 
     var body: some View {
-        Image(uiImage: model.image)
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(width: size, height: size, alignment: .center)
-            .clipped()
-            .onAppear {
-            model.load()
-        }
-    }
-}
-
-class ImageLoader: ObservableObject {
-    @Published var image: UIImage = UIImage()
-
-    var url: String = ""
-
-    init(url: String) {
-        self.url = url
-    }
-
-    func load() {
-        ImageManager.sharedInstance.receiveImage(forKey: url) { image in
-            DispatchQueue.main.async { [weak self] in
-                self?.image = image
-            }
+        VStack {
+            KFImage(URL(string: url))
+                .placeholder({
+                    Color.gray.opacity(0.1)
+                })
+                .resizable()
+                .scaledToFit()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: size, height: size, alignment: .center)
+                .clipped()
 
         }
     }

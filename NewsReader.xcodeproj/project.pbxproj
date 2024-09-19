@@ -18,12 +18,11 @@
 		EC69D47B2C96F53E0077D874 /* NewsItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69D47A2C96F53E0077D874 /* NewsItemRow.swift */; };
 		EC69D47E2C9701F00077D874 /* MockItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69D47D2C9701F00077D874 /* MockItems.swift */; };
 		EC69D4812C9BBAE30077D874 /* TextModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69D4802C9BBAE30077D874 /* TextModifiers.swift */; };
-		EC69D4842C9BC1140077D874 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EC69D4832C9BC1140077D874 /* SDWebImageSwiftUI */; };
-		EC69D4892C9BC2B70077D874 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69D4882C9BC2B70077D874 /* ImageManager.swift */; };
 		EC69D48B2C9BC5840077D874 /* CachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69D48A2C9BC5840077D874 /* CachedImage.swift */; };
 		EC69D48D2C9BCA980077D874 /* NewsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69D48C2C9BCA980077D874 /* NewsItemView.swift */; };
 		EC69D48F2C9BCAE20077D874 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69D48E2C9BCAE20077D874 /* NewsListView.swift */; };
 		EC69D4912C9BD12D0077D874 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69D4902C9BD12D0077D874 /* SearchView.swift */; };
+		EC69D4942C9BFA9E0077D874 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EC69D4932C9BFA9E0077D874 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		EC69D47A2C96F53E0077D874 /* NewsItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemRow.swift; sourceTree = "<group>"; };
 		EC69D47D2C9701F00077D874 /* MockItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockItems.swift; sourceTree = "<group>"; };
 		EC69D4802C9BBAE30077D874 /* TextModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifiers.swift; sourceTree = "<group>"; };
-		EC69D4882C9BC2B70077D874 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		EC69D48A2C9BC5840077D874 /* CachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImage.swift; sourceTree = "<group>"; };
 		EC69D48C2C9BCA980077D874 /* NewsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemView.swift; sourceTree = "<group>"; };
 		EC69D48E2C9BCAE20077D874 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
@@ -51,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC69D4842C9BC1140077D874 /* SDWebImageSwiftUI in Frameworks */,
+				EC69D4942C9BFA9E0077D874 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				EC69D48A2C9BC5840077D874 /* CachedImage.swift */,
-				EC69D4882C9BC2B70077D874 /* ImageManager.swift */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -154,7 +151,7 @@
 			);
 			name = NewsReader;
 			packageProductDependencies = (
-				EC69D4832C9BC1140077D874 /* SDWebImageSwiftUI */,
+				EC69D4932C9BFA9E0077D874 /* Kingfisher */,
 			);
 			productName = NewsReader;
 			productReference = EC69D4602C96E2330077D874 /* NewsReader.app */;
@@ -185,7 +182,7 @@
 			);
 			mainGroup = EC69D4572C96E2330077D874;
 			packageReferences = (
-				EC69D4822C9BC1140077D874 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				EC69D4922C9BFA9E0077D874 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = EC69D4612C96E2330077D874 /* Products */;
 			projectDirPath = "";
@@ -224,7 +221,6 @@
 				EC69D47E2C9701F00077D874 /* MockItems.swift in Sources */,
 				EC69D48D2C9BCA980077D874 /* NewsItemView.swift in Sources */,
 				EC69D4912C9BD12D0077D874 /* SearchView.swift in Sources */,
-				EC69D4892C9BC2B70077D874 /* ImageManager.swift in Sources */,
 				EC69D47B2C96F53E0077D874 /* NewsItemRow.swift in Sources */,
 				EC69D48B2C9BC5840077D874 /* CachedImage.swift in Sources */,
 			);
@@ -366,8 +362,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,9 +371,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = homeNet.NewsReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -395,8 +395,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,9 +404,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = homeNet.NewsReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -434,21 +438,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EC69D4822C9BC1140077D874 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+		EC69D4922C9BFA9E0077D874 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			repositoryURL = "https://github.com/onevcat/Kingfisher?ysclid=m18wggoi4364257932";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.2;
+				minimumVersion = 8.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EC69D4832C9BC1140077D874 /* SDWebImageSwiftUI */ = {
+		EC69D4932C9BFA9E0077D874 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC69D4822C9BC1140077D874 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
+			package = EC69D4922C9BFA9E0077D874 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
