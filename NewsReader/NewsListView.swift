@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct NewsListView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @State var items = MockHelper.shared.mockItems
 
-#Preview {
-    NewsListView()
+    var body: some View {
+        NavigationView {
+            List(items) { item in
+                NavigationLink(destination: NewsItemView(item: item)) {
+                    NewsItemRow(newsItem: item)
+                }
+            }
+            .refreshable {
+
+            }
+            .navigationBarTitle("News", displayMode: .inline)
+            .navigationBarItems(trailing: NavigationLink(destination: {
+                SearchView()
+            }, label: {
+                Image(systemName: "magnifyingglass")
+            })
+            )
+        }
+    }
 }

@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct NewsItemView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @State var item: NewsItem
 
-#Preview {
-    NewsItemView()
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 10) {
+                CachedImage(url: item.urlToImage ?? "")
+                Text(item.title ?? "").largeTitle()
+                Text(item.dateString).smallTitle()
+                Text(item.content ?? "").subTitle()
+                Button {
+                    UIApplication.shared.open(URL(string: item.url ?? "") ?? URL(fileURLWithPath: "htps:/ya.ru"))
+                } label: {
+                    Text("Show more").smallTitle()
+                }
+                Spacer()
+            }.padding()
+        }
+    }
 }

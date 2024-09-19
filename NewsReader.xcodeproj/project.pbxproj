@@ -23,6 +23,7 @@
 		EC69D48B2C9BC5840077D874 /* CachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69D48A2C9BC5840077D874 /* CachedImage.swift */; };
 		EC69D48D2C9BCA980077D874 /* NewsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69D48C2C9BCA980077D874 /* NewsItemView.swift */; };
 		EC69D48F2C9BCAE20077D874 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69D48E2C9BCAE20077D874 /* NewsListView.swift */; };
+		EC69D4912C9BD12D0077D874 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69D4902C9BD12D0077D874 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		EC69D48A2C9BC5840077D874 /* CachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImage.swift; sourceTree = "<group>"; };
 		EC69D48C2C9BCA980077D874 /* NewsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemView.swift; sourceTree = "<group>"; };
 		EC69D48E2C9BCAE20077D874 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		EC69D4902C9BD12D0077D874 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				EC69D48E2C9BCAE20077D874 /* NewsListView.swift */,
 				EC69D48C2C9BCA980077D874 /* NewsItemView.swift */,
 				EC69D47A2C96F53E0077D874 /* NewsItemRow.swift */,
+				EC69D4902C9BD12D0077D874 /* SearchView.swift */,
 				EC69D4672C96E2340077D874 /* Assets.xcassets */,
 				EC69D4692C96E2340077D874 /* Preview Content */,
 			);
@@ -220,6 +223,7 @@
 				EC69D4642C96E2330077D874 /* NewsReaderApp.swift in Sources */,
 				EC69D47E2C9701F00077D874 /* MockItems.swift in Sources */,
 				EC69D48D2C9BCA980077D874 /* NewsItemView.swift in Sources */,
+				EC69D4912C9BD12D0077D874 /* SearchView.swift in Sources */,
 				EC69D4892C9BC2B70077D874 /* ImageManager.swift in Sources */,
 				EC69D47B2C96F53E0077D874 /* NewsItemRow.swift in Sources */,
 				EC69D48B2C9BC5840077D874 /* CachedImage.swift in Sources */,
