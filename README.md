@@ -1,5 +1,6 @@
 # NewsReaderSUI
 Приложение для получения списка новостей с сайта-агрегатора новостей. 
+Реализовано в рамках изучения SwiftUI + Combine
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="false" poster="NewsReaderDemo.png">
